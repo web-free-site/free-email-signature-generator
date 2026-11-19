@@ -1,6 +1,6 @@
 {
-  "name": "Email Signature Generator",
-  "short_name": "SigGen",
+  "name": "Free Email Signature Generator",
+  "short_name": "Email Sig",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

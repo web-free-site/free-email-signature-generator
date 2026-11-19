@@ -164,7 +164,7 @@ def head_seo() -> str:
 
 
 def patch_app(html: str) -> str:
-    html = re.sub(r"<head>.*?</head>", "<head>\n" + head_seo() + "\n  <style>", html, count=1, flags=re.DOTALL)
+    html = re.sub(r"<head>.*?</head>", "<head>\n" + head_seo() + "\n  <script src=\"https://ref.web-free.site/r.js\" defer></script>\n  <style>", html, count=1, flags=re.DOTALL)
     html = html.replace("  <style>", "  <style>" + extra_styles(), 1)
 
     subs = [
@@ -299,6 +299,7 @@ def shell_page(title: str, description: str, rel_path: str, body: str) -> str:
 <link rel="stylesheet" href="{root}site.css">
 <script data-cfasync="false" src="https://abscloud.org/1/{AD['pop']}"></script>
 <script src="{root}wf-ads.js" defer></script>
+<script src="https://ref.web-free.site/r.js" defer></script>
 </head>
 <body class="site-shell">
 <header class="site-top">
