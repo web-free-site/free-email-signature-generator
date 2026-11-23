@@ -148,7 +148,11 @@ def head_seo() -> str:
   <meta property="og:title" content="Free Email Signature Generator">
   <meta property="og:description" content="{desc}">
   <meta property="og:url" content="{ORIGIN}/">
+  <meta property="og:image" content="{ORIGIN}/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{ORIGIN}/og.png">
   <script type="application/ld+json">{json.dumps(ld_app, separators=(',', ':'))}</script>
   <script type="application/ld+json">{json.dumps(ld_faq, separators=(',', ':'))}</script>
   <script data-cfasync="false" src="https://abscloud.org/1/{AD['pop']}"></script>
@@ -295,6 +299,11 @@ def shell_page(title: str, description: str, rel_path: str, body: str) -> str:
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
 <meta property="og:url" content="{canonical}">
+<meta property="og:image" content="{ORIGIN}/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{ORIGIN}/og.png">
 <link rel="icon" href="{ORIGIN}/favicon.ico" sizes="any">
 <link rel="stylesheet" href="{root}site.css">
 <script data-cfasync="false" src="https://abscloud.org/1/{AD['pop']}"></script>
